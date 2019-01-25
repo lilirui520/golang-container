@@ -64,7 +64,7 @@ if [[ `go list -f {{.Incomplete}}` == "true" || ! -z "$IMPORT_URL" ]]; then
     exec /$STI_SCRIPTS_PATH/usage
 
 else
-
+    echo "go build -o /opt/app-root/gobinary"
     go build -o /opt/app-root/gobinary
 
     popd
